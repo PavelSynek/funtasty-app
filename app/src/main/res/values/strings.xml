@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Funtasty App</string>
+
+    <string name="linux_contributors">Linux repo contributors</string>
+    <string name="error_loading">Couldn\'t load data. Tap to retry.</string>
+</resources>

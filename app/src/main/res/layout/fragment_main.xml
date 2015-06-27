@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cz.synek.funtastyapp.fragment.MainFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/recyclerview_padding"
+        android:paddingTop="@dimen/recyclerview_padding"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/list_item_warehouse" />
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/error_loading"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/progress_wheel"
+        layout="@layout/progress_wheel" />
+
+</FrameLayout>
